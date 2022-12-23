@@ -89,6 +89,9 @@ h2 {
     .container {
         padding-left: 0;
     }
+    .res768 {
+        display: none;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
