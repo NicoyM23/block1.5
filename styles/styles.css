@@ -52,6 +52,17 @@ h2 {
     width: 40px;
     display: inline-block;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #DDDDDD;
+    margin-right: 5px;
+}
 .slider__show-all {
     display: flex;
     align-items: center;
@@ -94,5 +105,25 @@ h2 {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-
+    .slider {
+        max-width: 320px;
+        overflow: hidden;
+    }
+    h2 {
+        max-height: 80px;
+        font-size: 16px;
+    }
+    .slider__items {
+        flex-wrap: nowrap;
+    }
+    .slider__items::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .slider__show-all {
+        display: none;
+    }
+    .hidden {
+        display: flex;
+    }
 }
